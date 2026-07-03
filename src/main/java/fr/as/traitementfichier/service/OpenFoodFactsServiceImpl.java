@@ -12,9 +12,9 @@ public class OpenFoodFactsServiceImpl implements OpenFoodFactsService {
     private Stock stock;
 
     public OpenFoodFactsServiceImpl(Stock stock) {
-        if (stock == null) {
-            throw new OpenFoodFactsException("Le stock ne peut pas être null.");
-        }
+//        if (stock == null) {
+//            throw new OpenFoodFactsException("Le stock ne peut pas être null.");
+//        }
         this.stock = stock;
     }
 
@@ -88,9 +88,9 @@ public class OpenFoodFactsServiceImpl implements OpenFoodFactsService {
      * Vérifie qu'un texte n'est pas vide.
      */
     private void verifierTexte(String texte, String message) {
-        if (texte == null || texte.isBlank()) {
-            throw new OpenFoodFactsException(message);
-        }
+//        if (texte == null || texte.isBlank()) {
+//            throw new OpenFoodFactsException(message);
+//        }
     }
 
     /**
